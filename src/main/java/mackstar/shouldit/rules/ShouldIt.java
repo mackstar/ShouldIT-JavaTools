@@ -43,7 +43,6 @@ public class ShouldIt extends TestWatcher {
     	Class<?> className = null;
 		try {
 			className = Class.forName(description.getClassName());
-			System.out.println(className);
 		} catch (ClassNotFoundException e) {
 			return null;
 		}
