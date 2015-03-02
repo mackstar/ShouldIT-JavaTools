@@ -5,7 +5,7 @@ import java.lang.annotation.Annotation;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
-import mackstar.shouldit.annotations.ShouldiTContext;
+import mackstar.shouldit.annotations.ShouldItContext;
 import mackstar.shouldit.annotations.It;
 import mackstar.shouldit.services.*;
 
@@ -46,8 +46,8 @@ public class ShouldIt extends TestWatcher {
 		} catch (ClassNotFoundException e) {
 			return null;
 		}
-		Annotation annotation = className.getAnnotation(ShouldiTContext.class);
-		ShouldiTContext context = (ShouldiTContext) annotation;
+		Annotation annotation = className.getAnnotation(ShouldItContext.class);
+		ShouldItContext context = (ShouldItContext) annotation;
 		if (context == null) {
 			return null;
 		}
