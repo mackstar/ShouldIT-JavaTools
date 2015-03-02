@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
  
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface Context {
+public @interface ShouldITContext {
  
 	public String value();
  
