@@ -2,7 +2,7 @@ package mackstar.shouldit.annotations.mocks;
 
 import mackstar.shouldit.annotations.*;
 
-@ShouldITContext("My Context")
+@ShouldiTContext("My Context")
 public class ItClass {
 	
 	@It("should have a should")

@@ -10,8 +10,8 @@ public class ContextTest {
 	@Test
 	public void test() {
 		Class<ItClass> itClass = ItClass.class;
-		Annotation annotation = itClass.getAnnotation(ShouldITContext.class);
-		ShouldITContext context = (ShouldITContext) annotation;
+		Annotation annotation = itClass.getAnnotation(ShouldiTContext.class);
+		ShouldiTContext context = (ShouldiTContext) annotation;
 		String expected = "My Context";
 		assertEquals("Can contain a context", expected, context.value());
 	}
